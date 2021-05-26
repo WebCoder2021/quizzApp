@@ -135,7 +135,7 @@ let questions = [
     {
         numb: 12,
         question: "What is the correct CSS syntax for making all the <p> elements bold?",
-        answer: "p {font-weight:bold;} ",
+        answer: "p {font-weight:bold;}",
         options: [
             'p style="font-size:bold;"',
             'p style="font-weight:bold;"',
