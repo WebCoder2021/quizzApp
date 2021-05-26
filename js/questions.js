@@ -135,7 +135,7 @@ let questions = [
     {
         numb: 12,
         question: "What is the correct CSS syntax for making all the <p> elements bold?",
-        answer: "p {font-weight:bold;}",
+        answer: "p {font-weight:bold;} ",
         options: [
             'p style="font-size:bold;"',
             'p style="font-weight:bold;"',
@@ -243,8 +243,7 @@ The right border = 1pixel?
             "list-type-style: square;"
         ]
     },
-    ,
-
+    
     {
         numb: 21,
         question: "How do you select an element with id 'demo'?",
@@ -256,7 +255,6 @@ The right border = 1pixel?
             ".demo"
         ]
     },
-    ,
 
     {
         numb: 22,
@@ -269,8 +267,7 @@ The right border = 1pixel?
             "#test"
         ]
     },
-    ,
-
+    
     {
         numb: 23,
         question: "How do you select all p elements inside a div element?",
@@ -282,7 +279,7 @@ The right border = 1pixel?
             "div ~ p"
         ]
     },
-    ,
+    
 
     {
         numb: 24,
@@ -295,7 +292,7 @@ The right border = 1pixel?
             "Separate each selector with a style"
         ]
     },
-    ,
+    
 
     {
         numb: 25,
