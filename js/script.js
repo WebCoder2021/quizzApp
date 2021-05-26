@@ -92,7 +92,15 @@ next_btn.onclick = () => {
 //getting questions and options from array
 function showQuestions(index) {
   const que_text = document.querySelector(".que_text");
+  const random_value = [0,1,2,3];
+const lgh=random_value.length;
+var newRandom = [];
 
+for (var i = 0; i < lgh; i++) {
+  var idx = Math.floor(Math.random() * random_value.length);
+  newRandom.push(random_value[idx]);
+  random_value.splice(idx, 1);
+}
   let que_tag =
     "<span>" +
     questions[index].numb +
@@ -101,16 +109,16 @@ function showQuestions(index) {
     "</span>";
   let option_tag =
     '<div class="option">' +
-    questions[index].options[0] +
+    questions[index].options[newRandom[0]] +
     "<span></span></div>" +
     '<div class="option">' +
-    questions[index].options[1] +
+    questions[index].options[newRandom[1]] +
     "<span></span></div>" +
     '<div class="option">' +
-    questions[index].options[2] +
+    questions[index].options[newRandom[2]] +
     "<span></span></div>" +
     '<div class="option">' +
-    questions[index].options[3] +
+    questions[index].options[newRandom[3]] +
     "<span></span></div>";
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
